@@ -7,13 +7,13 @@
     <TextView
             android:text="Country Name"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content" android:id="@+id/tvCountryName" android:layout_marginTop="17dp"
+            android:layout_height="wrap_content" android:id="@+id/tvCountryName" android:layout_marginTop="23dp"
             android:layout_alignParentStart="true"
-            android:layout_marginStart="37dp" android:layout_alignParentTop="true"/>
+            android:layout_marginStart="28dp" android:layout_alignParentTop="true"/>
     <TextView
             android:text="CountryCode"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content" android:id="@+id/tvCountryCode"
-            android:layout_marginTop="22dp" android:layout_alignParentTop="true"
-            android:layout_toEndOf="@+id/tvCountryName" android:layout_marginStart="74dp"/>
+            android:layout_marginTop="23dp" android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true" android:layout_marginEnd="23dp"/>
 </RelativeLayout>

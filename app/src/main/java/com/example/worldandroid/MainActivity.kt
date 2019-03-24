@@ -5,7 +5,6 @@ import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.AdapterView
 import android.widget.ListView
-import android.widget.Toast
 
 class MainActivity : AppCompatActivity() {
 
@@ -21,7 +20,6 @@ class MainActivity : AppCompatActivity() {
 
         lvCountries.adapter = countryAdapter
 
-
         //Pass clicked country to the detail view
         lvCountries.onItemClickListener = AdapterView.OnItemClickListener{ parent, view, position, id ->
 
@@ -33,6 +31,5 @@ class MainActivity : AppCompatActivity() {
             startActivity(displayCountryDetails)
 
         }
-
     }
 }
