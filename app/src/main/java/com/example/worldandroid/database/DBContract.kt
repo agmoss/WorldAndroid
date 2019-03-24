@@ -1,10 +1,10 @@
-package com.example.worldandroid
+package com.example.worldandroid.database
 
 import android.provider.BaseColumns
 
 object DBContract {
 
-    /* Inner class that defines the table contents */
+    //Inner class that defines the table contents
     class CountryEntry : BaseColumns {
         companion object {
             val TABLE_NAME = "country"

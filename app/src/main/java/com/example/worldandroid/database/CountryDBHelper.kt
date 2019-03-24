@@ -1,4 +1,4 @@
-package com.example.worldandroid
+package com.example.worldandroid.database
 
 import android.content.Context
 import android.content.SharedPreferences
@@ -6,11 +6,25 @@ import android.database.Cursor
 import android.database.sqlite.SQLiteDatabase
 import android.database.sqlite.SQLiteException
 import android.database.sqlite.SQLiteOpenHelper
+import com.example.worldandroid.models.Country
 import java.io.File
 import java.io.FileOutputStream
 import java.util.ArrayList
 
-class CountryDBHelper(val context: Context) : SQLiteOpenHelper(context, DATABASE_NAME, null, DATABASE_VERSION) {
+
+/*
+
+Reads in the existing world database and install it in the application.
+
+Provides functionality to query this database.
+
+ */
+
+
+class CountryDBHelper(val context: Context) : SQLiteOpenHelper(context,
+    DATABASE_NAME, null,
+    DATABASE_VERSION
+) {
 
     private val preferences: SharedPreferences = context.getSharedPreferences(
         "${context.packageName}.database_versions",
@@ -23,7 +37,10 @@ class CountryDBHelper(val context: Context) : SQLiteOpenHelper(context, DATABASE
 
     private fun writeDatabaseVersionInPreferences() {
         preferences.edit().apply {
-            putInt(DATABASE_NAME, DATABASE_VERSION)
+            putInt(
+                DATABASE_NAME,
+                DATABASE_VERSION
+            )
             apply()
         }
     }
@@ -124,8 +141,12 @@ class CountryDBHelper(val context: Context) : SQLiteOpenHelper(context, DATABASE
                 capital  = cursor.getString(cursor.getColumnIndex(DBContract.CountryEntry.COLUMN_CAPITAL))
                 code2  = cursor.getString(cursor.getColumnIndex(DBContract.CountryEntry.COLUMN_CODE2))
 
-                countries.add(Country(countryCode,name,continent,region,surfaceArea,indepYear,population,lifeExpectancy,
-                    gnp,gnpOld,localName,governmentForm,headOfState,capital,code2))
+                countries.add(
+                    Country(
+                        countryCode, name, continent, region, surfaceArea, indepYear, population, lifeExpectancy,
+                        gnp, gnpOld, localName, governmentForm, headOfState, capital, code2
+                    )
+                )
                 cursor.moveToNext()
             }
         }
