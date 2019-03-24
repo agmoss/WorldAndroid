@@ -1,3 +1,30 @@
 <resources>
     <string name="app_name">WorldAndroid</string>
+    <string name="app_title">World Encyclopedia</string>
+    <string name="geography">Geography</string>
+    <string name="continent">Continent</string>
+    <string name="surface_area">Surface Area</string>
+    <string name="region">Region</string>
+    <string name="government">Government</string>
+    <string name="form">Form</string>
+    <string name="head_of_state">Head Of State</string>
+    <string name="capital">Capital</string>
+    <string name="year_of_independence">Year of Independence</string>
+    <string name="local_name">Local Name</string>
+    <string name="economy">Economy</string>
+    <string name="gnp">GNP</string>
+    <string name="demographics">Demographics</string>
+    <string name="population">Population</string>
+    <string name="life_expectancy">Life Expectancy</string>
+    <string name="tvcontinent">tvContinent</string>
+    <string name="tvsurfacearea">tvSurfaceArea</string>
+    <string name="tvgovernmentform">tvGovernmentForm</string>
+    <string name="tvregion">tvRegion</string>
+    <string name="tvcapital">tvCapital</string>
+    <string name="tvheadofstate">tvHeadOfState</string>
+    <string name="tvindepyear">tvIndepYear</string>
+    <string name="tvlocalname">tvLocalName</string>
+    <string name="tvgnp">tvGNP</string>
+    <string name="tvpopulation">tvPopulation</string>
+    <string name="tvlifeexpectancy">tvLifeExpectancy</string>
 </resources>

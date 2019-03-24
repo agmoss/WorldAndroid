@@ -4,6 +4,8 @@ import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.TextView
 import com.example.worldandroid.models.Country
+import java.text.NumberFormat
+import java.util.*
 
 /*
 
@@ -18,8 +20,6 @@ class CountryDetailActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_country_detail)
 
-        val actionbar = supportActionBar
-
         val country = intent.extras.getSerializable("selectedCountry") as Country
 
         val tvContinent = findViewById<TextView>(R.id.tvContinent)
@@ -30,22 +30,21 @@ class CountryDetailActivity : AppCompatActivity() {
         val tvGNP = findViewById<TextView>(R.id.tvGNP)
         val tvGovernmentForm = findViewById<TextView>(R.id.tvGovernmentForm)
         val tvHeadOfState = findViewById<TextView>(R.id.tvHeadOfState)
-        val tvCapital = findViewById<TextView>(R.id.tvCapital)
         val tvLifeExpectancy = findViewById<TextView>(R.id.tvLifeExpectancy)
         val tvLocalName = findViewById<TextView>(R.id.tvLocalName)
 
+        val actionbar = supportActionBar
         actionbar!!.title = country.name
 
         tvContinent.text = country.continent
-        tvSurfaceArea.text = country.surfaceArea
+        tvSurfaceArea.text = NumberFormat.getNumberInstance(Locale.US).format(country.surfaceArea.toDouble()) + " km\u00B2"
         tvIndepYear.text = country.indepYear
-        tvPopulation.text = country.population
+        tvPopulation.text = NumberFormat.getNumberInstance(Locale.US).format(country.population.toDouble())
         tvRegion.text = country.region
-        tvGNP.text = country.gnp
+        tvGNP.text = NumberFormat.getNumberInstance(Locale.US).format(country.gnp.toDouble()) + " M"
         tvGovernmentForm.text = country.governmentForm
         tvHeadOfState.text = country.headOfState
-        tvCapital.text = country.capital
-        tvLifeExpectancy.text = country.liveExpectancy
+        tvLifeExpectancy.text = country.liveExpectancy + " years"
         tvLocalName.text = country.localName
 
     }

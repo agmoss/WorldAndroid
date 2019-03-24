@@ -13,67 +13,65 @@
             app:layout_constraintBottom_toBottomOf="parent" android:id="@+id/linearLayout"
             app:layout_constraintEnd_toStartOf="@+id/linearLayout2" android:layout_marginEnd="8dp">
         <TextView
-                android:text="Geography"
+                android:text="@string/geography"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content" android:id="@+id/textView3" android:textSize="18sp"
                 android:textStyle="bold" android:layout_marginTop="20dp"/>
         <TextView
-                android:text="Continent"
+                android:text="@string/continent"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content" android:id="@+id/textView5"/>
+                android:layout_height="wrap_content" android:id="@+id/textView5" android:layout_marginBottom="0dp"/>
         <TextView
-                android:text="Surface Area"
+                android:text="@string/surface_area"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content" android:id="@+id/textView6"/>
+                android:layout_height="wrap_content" android:id="@+id/textView6" android:layout_marginBottom="0dp"/>
         <TextView
-                android:text="Region"
+                android:text="@string/region"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content" android:id="@+id/textView7"/>
+                android:layout_height="wrap_content" android:id="@+id/textView7" android:layout_marginBottom="0dp"/>
         <TextView
-                android:text="Government"
+                android:text="@string/government"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content" android:id="@+id/textView8" android:textSize="18sp"
                 android:textStyle="bold" android:layout_marginTop="20dp"/>
         <TextView
-                android:text="Form"
+                android:text="@string/form"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content" android:id="@+id/textView9"/>
+                android:layout_height="wrap_content" android:id="@+id/textView9" android:paddingBottom="0dp"
+                android:maxLength="30"/>
         <TextView
-                android:text="Head Of State"
+                android:text="@string/head_of_state"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content" android:id="@+id/textView10"/>
+                android:layout_height="wrap_content" android:id="@+id/textView10" android:layout_marginBottom="0dp"
+                android:paddingBottom="0dp" android:maxLength="30"/>
         <TextView
-                android:text="Capital"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content" android:id="@+id/textView11"/>
-        <TextView
-                android:text="Year of Independence"
+                android:text="@string/year_of_independence"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content" android:id="@+id/textView18"/>
         <TextView
-                android:text="Local Name"
+                android:text="@string/local_name"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content" android:id="@+id/textView12"/>
         <TextView
-                android:text="Economy"
+                android:text="@string/economy"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content" android:id="@+id/textView13" android:textSize="18sp"
                 android:textStyle="bold" android:layout_marginTop="20dp"/>
         <TextView
-                android:text="GNP"
+                android:text="@string/gnp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content" android:id="@+id/textView14"/>
         <TextView
-                android:text="Demographics"
+                android:text="@string/demographics"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content" android:id="@+id/textView15" android:textSize="18sp"
                 android:textStyle="bold" android:layout_marginTop="20dp"/>
         <TextView
-                android:text="Population"
+                android:text="@string/population"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content" android:id="@+id/textView16"/>
         <TextView
-                android:text="Life Expectancy"
+                android:text="@string/life_expectancy"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content" android:id="@+id/textView17"/>
     </LinearLayout>
@@ -84,51 +82,49 @@
             android:layout_marginTop="8dp"
             app:layout_constraintTop_toTopOf="parent" android:layout_marginBottom="8dp"
             app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent"
-            android:layout_marginEnd="8dp" android:id="@+id/linearLayout2">
+            android:layout_marginEnd="4dp" android:id="@+id/linearLayout2" app:layout_constraintVertical_bias="0.494">
         <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content" android:id="@+id/textView19" android:textSize="18sp"
                 android:layout_marginTop="20dp"/>
         <TextView
-                android:text="tvContinent"
+                android:text="@string/tvcontinent"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content" android:id="@+id/tvContinent"/>
+                android:layout_height="wrap_content" android:id="@+id/tvContinent" android:layout_marginBottom="0dp"/>
         <TextView
-                android:text="tvSurfaceArea"
+                android:text="@string/tvsurfacearea"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content" android:id="@+id/tvSurfaceArea"/>
+                android:layout_height="wrap_content" android:id="@+id/tvSurfaceArea" android:layout_marginBottom="0dp"/>
         <TextView
-                android:text="tvRegion"
+                android:text="@string/tvregion"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content" android:id="@+id/tvRegion"/>
+                android:layout_height="wrap_content" android:id="@+id/tvRegion" android:layout_marginBottom="0dp"/>
         <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content" android:textSize="18sp" android:layout_marginTop="20dp"/>
         <TextView
-                android:text="tvGovernmentForm"
+                android:text="@string/tvgovernmentform"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content" android:id="@+id/tvGovernmentForm"/>
+                android:layout_height="wrap_content" android:id="@+id/tvGovernmentForm" android:paddingBottom="0dp"
+                android:maxLength="30"/>
         <TextView
-                android:text="tvHeadOfState"
+                android:text="@string/tvheadofstate"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content" android:id="@+id/tvHeadOfState"/>
+                android:layout_height="wrap_content" android:id="@+id/tvHeadOfState" android:layout_marginBottom="0dp"
+                android:paddingBottom="0dp" android:maxLength="30"/>
         <TextView
-                android:text="tvCapital"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content" android:id="@+id/tvCapital"/>
-        <TextView
-                android:text="tvIndepYear"
+                android:text="@string/tvindepyear"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content" android:id="@+id/tvIndepYear"/>
         <TextView
-                android:text="tvLocalName"
+                android:text="@string/tvlocalname"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content" android:id="@+id/tvLocalName"/>
         <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content" android:textSize="18sp" android:layout_marginTop="20dp"/>
         <TextView
-                android:text="tvGNP"
+                android:text="@string/tvgnp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content" android:id="@+id/tvGNP"/>
         <TextView
@@ -136,11 +132,11 @@
                 android:layout_height="wrap_content" android:id="@+id/textView31" android:textSize="18sp"
                 android:layout_marginTop="20dp"/>
         <TextView
-                android:text="tvPopulation"
+                android:text="@string/tvpopulation"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content" android:id="@+id/tvPopulation"/>
         <TextView
-                android:text="tvLifeExpectancy"
+                android:text="@string/tvlifeexpectancy"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content" android:id="@+id/tvLifeExpectancy"/>
     </LinearLayout>
