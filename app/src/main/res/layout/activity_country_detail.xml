@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp" >
+    <TextView
+            android:text="Geography"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:id="@+id/textView" android:layout_marginTop="40dp"
+            android:layout_alignParentTop="true" android:layout_alignParentStart="true"
+            android:layout_marginStart="28dp"/>
+    <TextView
+            android:text="Continent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:id="@+id/textView2"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="50dp" android:layout_marginTop="102dp" android:layout_alignParentTop="true"/>
+    <TextView
+            android:text="tvContinent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:id="@+id/tvContinent"
+            android:layout_marginStart="195dp" android:layout_marginTop="103dp" android:layout_alignParentTop="true"
+            android:layout_alignParentStart="true"/>
+    <TextView
+            android:text="Surface Area"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:id="@+id/textView4" android:layout_marginTop="167dp"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="45dp" android:layout_alignParentTop="true"/>
+    <TextView
+            android:text="tvSurfaceArea"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:id="@+id/tvSurfaceArea" android:layout_alignParentStart="true"
+            android:layout_marginStart="188dp" android:layout_marginTop="164dp" android:layout_alignParentTop="true"/>
+</RelativeLayout>
