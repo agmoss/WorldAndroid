@@ -5,6 +5,9 @@ import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.AdapterView
 import android.widget.ListView
+import com.example.worldandroid.adapter.CountryAdapter
+import com.example.worldandroid.database.CountryDBHelper
+import com.example.worldandroid.models.Country
 
 class MainActivity : AppCompatActivity() {
 
@@ -16,7 +19,7 @@ class MainActivity : AppCompatActivity() {
 
         val lvCountries = findViewById<ListView>(R.id.lvCountries)
 
-        val countryAdapter = CountryAdapter(countryList,this)
+        val countryAdapter = CountryAdapter(countryList, this)
 
         lvCountries.adapter = countryAdapter
 

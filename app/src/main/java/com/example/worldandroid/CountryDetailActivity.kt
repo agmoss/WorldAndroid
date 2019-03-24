@@ -3,6 +3,14 @@ package com.example.worldandroid
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.TextView
+import com.example.worldandroid.models.Country
+
+/*
+
+Display details of the selected country
+
+ */
+
 
 class CountryDetailActivity : AppCompatActivity() {
 

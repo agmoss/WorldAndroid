@@ -1,4 +1,4 @@
-package com.example.worldandroid
+package com.example.worldandroid.models
 
 import java.io.Serializable
 
