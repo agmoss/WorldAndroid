@@ -11,6 +11,7 @@ A kotlin android app for viewing country information. Built on top of the world 
 
 * [Kotlin](https://kotlinlang.org/)
 * [Android Studio](https://developer.android.com/studio)
+* [SQLite](https://www.sqlite.org/index.html)
 
 ## Authors
 

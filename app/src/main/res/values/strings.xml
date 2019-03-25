@@ -27,4 +27,6 @@
     <string name="tvgnp">tvGNP</string>
     <string name="tvpopulation">tvPopulation</string>
     <string name="tvlifeexpectancy">tvLifeExpectancy</string>
+    <string name="country_name">Country Name</string>
+    <string name="countrycode">CountryCode</string>
 </resources>
